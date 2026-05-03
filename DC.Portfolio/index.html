@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dominic Portfolio Pro</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0a0a0a;color:#fff;overflow-x:hidden}
+
+/* HERO */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(to right,#000,#888);
+}
+
+.name{
+border:2px solid #fff;
+padding:20px 70px;
+border-radius:100px;
+font-size:44px;
+letter-spacing:2px;
+}
+
+.subtitle{
+margin-top:15px;
+letter-spacing:4px;
+font-size:12px;
+opacity:.7;
+}
+
+/* SECTION */
+.section{max-width:1100px;margin:auto;padding:100px 20px}
+
+/* ABOUT */
+.about{display:flex;align-items:center;gap:60px}
+.about img{
+width:260px;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,.6);
+}
+.about h2{margin-bottom:15px}
+.about p{color:#ccc;line-height:1.7}
+
+/* SKILLS */
+.skills{display:flex;gap:40px;margin-top:40px}
+.skill p{color:#aaa;font-size:14px}
+
+/* CUT IMAGE SECTION */
+.split{
+display:flex;
+align-items:center;
+gap:60px;
+margin-top:80px;
+}
+
+.clip-img{
+width:350px;
+height:300px;
+background:url('keyboard.jpg') center/cover;
+clip-path: polygon(0 0, 80% 0, 100% 30%, 100% 100%, 20% 100%, 0 70%);
+box-shadow:0 20px 50px rgba(0,0,0,.6);
+}
+
+/* EXPERIENCE */
+.experience{display:flex;gap:30px;margin-top:40px}
+.card{text-align:center;transition:.3s}
+.card:hover{transform:translateY(-12px)}
+.card img{
+width:140px;height:140px;border-radius:50%;
+box-shadow:0 10px 25px rgba(0,0,0,.7);
+}
+.card p{color:#aaa;font-size:14px}
+
+/* FAQ */
+.faq{display:flex;gap:25px;margin-top:50px}
+.faq-item{
+flex:1;
+padding:20px;
+border-radius:12px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+transition:.3s;
+}
+.faq-item:hover{background:rgba(255,255,255,0.1)}
+.faq-item p{color:#bbb;font-size:13px}
+
+/* FOOTER HERO */
+.footer{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.9)),
+url('footer.jpg/footer.jpg1.jpg') center/cover no-repeat;
+}
+
+.footer h2{font-size:48px;margin-bottom:20px}
+
+.socials i{
+font-size:22px;
+margin:0 12px;
+cursor:pointer;
+transition:.3s;
+}
+.socials i:hover{opacity:.6}
+
+/* ANIMATION */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
+}
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.about,.split,.skills,.experience,.faq{flex-direction:column;text-align:center}
+.clip-img{width:100%}
+.name{font-size:28px;padding:15px 40px}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="name">Dominic Charles L. Bariwad</div>
+<div class="subtitle">STUDENT</div>
+</header>
+
+<section class="section about fade">
+<img src="footer.jpg/footer.jpg.jpg">
+<div>
+<h2>ABOUT ME</h2>
+<p>I am a BSIT student passionate about building digital solutions and continuously improving my technical skills. to grow professionally in the field. This portfolio serves as a showcase of my academic progress, technical abilities, and dedication to the field of Information Technology.</p>
+</div>
+</section>
+
+<section class="section fade">
+<h2>MY SOURCE LANGUAGE</h2>
+<div class="skills">
+<div class="skill"><h3>HTML</h3><p>HTML is the structure of a webpage. It tells the browser what elements to display—like headings, paragraphs, images, and links. Think of it as the skeleton of a website.</p></div>
+<div class="skill"><h3>CSS</h3><p>CSS controls how the webpage looks. It handles colors, fonts, spacing, layouts, and responsiveness. If HTML is the skeleton, CSS is the design and appearance.</p></div>
+<div class="skill"><h3>PHP</h3><p>PHP is a server-side scripting language used to make websites dynamic. It can process forms, interact with databases, and generate content before the page is sent to the browser. Think of it as the brain behind the scenes.</p></div>
+</div>
+
+<div class="split">
+<div class="clip-img"></div>
+<div>
+
+</div>
+</div>
+</section>
+
+<section class="section fade">
+<h2>EXPERIENCE</h2>
+<div class="experience">
+<div class="card"><img src="exp1.jpg"><p>Analysis Service</p></div>
+<div class="card"><img src="exp2.jpg"><p>App Development</p></div>
+<div class="card"><img src="exp3.jpg"><p>QA Testing</p></div>
+</div>
+</section>
+
+<section class="section fade">
+<h2>FAQS</h2>
+<div class="faq">
+<div class="faq-item"><h4>How will I know which internet plan is suitable?</h4><p>Choose based on your usage, number of users, and speed requirements.</p></div>
+<div class="faq-item"><h4>Does it include installation?</h4><p>Most providers include installation or offer it for a fee.</p></div>
+<div class="faq-item"><h4>Is support 24/7?</h4><p>Top providers offer 24/7 customer support.</p></div>
+</div>
+</section>
+
+<section class="footer">
+<h2>Start your journey here.</h2>
+<div class="socials">
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+</div>
+</section>
+
+<script>
+// scroll animation
+const fades = document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+fades.forEach(el=>{
+const top = el.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+el.classList.add('show');
+}
+})
+})
+</script>
+
+</body>
+</html>
